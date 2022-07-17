@@ -9,6 +9,7 @@ Starter code for a clean Next.js + TypeScript + ESLint + Husky project.
 ```bash
 # NPM
 npm install
+
 # Yarn
 yarn
 ```
@@ -17,9 +18,10 @@ yarn
 
 ```bash
 # NPM
-npm husky install
+npm run prepare
+
 # Yarn
-yarn husky install
+yarn prepare
 ```
 
 **_NOTE:_** Ensure that you have got a Git repository, otherwise run this command: `git init`
@@ -29,6 +31,7 @@ yarn husky install
 ```bash
 # NPM
 npm run dev
+
 # Yarn
 yarn dev
 ```
