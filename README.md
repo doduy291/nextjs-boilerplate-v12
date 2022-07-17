@@ -4,7 +4,7 @@ Starter code for a clean Next.js + TypeScript + ESLint + Husky project.
 
 ## Get started
 
-- <h3>Install dependencies</h3>
+### Install dependencies
 
 ```bash
 # NPM
@@ -13,19 +13,18 @@ npm install
 yarn
 ```
 
-- <h3>Enable husky</h3>
+### Enable husky
 
 ```bash
 # NPM
 npm husky install
 # Yarn
 yarn husky install
-
-// Ensure that you have got a Git repository, otherwise run this command:
-git init
 ```
 
-- <h3>Start dev server</h3>
+**_ NOTE: _** Ensure that you have got a Git repository, otherwise run this command: `git init`
+
+### Start dev server
 
 ```bash
 # NPM
