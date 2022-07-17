@@ -37,6 +37,7 @@ yarn dev
 
 **`.eslintrc.json`**
 <br>
+
 More rules: [@typescript-eslint](https://typescript-eslint.io/rules/) and [@next](https://nextjs.org/docs/basic-features/eslint#eslint-plugin)
 
 ```js
@@ -60,6 +61,7 @@ More rules: [@typescript-eslint](https://typescript-eslint.io/rules/) and [@next
 
 **`tsconfig.json`**
 <br>
+
 More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
 
 ```js
