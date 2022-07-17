@@ -1,6 +1,6 @@
 # Next.js setup
 
-Starter code for a clean Next.js + TypeScript + ESLint + Husky project.
+Starter code for a clean Next.js + TypeScript + ESLint + Lint-staged + Husky project.
 
 ## Get started
 
@@ -74,13 +74,10 @@ More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -93,5 +90,6 @@ More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
+
 
 ```
