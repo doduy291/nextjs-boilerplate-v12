@@ -1,39 +1,34 @@
-# Next.js setup
+# Next.js Setup
 
 Starter code for a clean Next.js + TypeScript + ESLint + Lint-staged + Husky project.
 
-## Get started
+### Tech Stack
 
-### Install dependencies
+- <img src="https://img.icons8.com/color/48/000000/nextjs.png" width="35px" alt="NextJS" /> [NextJS]("https://nextjs.org")
+- <img src="https://img.icons8.com/color/48/000000/typescript.png" width="35px" alt="Typescript" /> [Typescript]("https://www.typescriptlang.org")
+
+## Getting Started
+
+### 1. Clone the repository and install dependencies
 
 ```bash
-# NPM
-npm install
-
-# Yarn
-yarn
+$ git clone https://github.com/doduy291/next-js-setup.git <YOUR_FOLDER_NAME>
+$ cd <YOUR_FOLDER_NAME>
+$ npm install
 ```
 
-### Enable husky
+### 2. Enable husky
 
 ```bash
-# NPM
 npm run prepare
-
-# Yarn
-yarn prepare
 ```
 
 **_NOTE:_** Ensure that you have got a Git repository, otherwise run this command: `git init`
 
-### Start dev server
+### 3. Development
 
 ```bash
-# NPM
 npm run dev
-
-# Yarn
-yarn dev
 ```
 
 ## Configs
