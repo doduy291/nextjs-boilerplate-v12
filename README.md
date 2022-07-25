@@ -1,11 +1,14 @@
 # Next.js Setup
 
-Starter code for a clean Next.js + TypeScript + ESLint + Lint-staged + Husky project.
+This is a stater template for NextJS and Typescript.
 
 ### Tech Stack
 
-- <img src="https://img.icons8.com/color/48/000000/nextjs.png" width="35px" alt="NextJS" /> [NextJS]("https://nextjs.org")
-- <img src="https://img.icons8.com/color/48/000000/typescript.png" width="35px" alt="Typescript" /> [Typescript]("https://www.typescriptlang.org")
+- [NextJS]("https://nextjs.org") - A React framework that enables you to build superfast and extremely user-friendly static websites.
+- [Typescript]("https://www.typescriptlang.org") - A strongly typed programming language that builds on JavaScript.
+- [ESlint](https://eslint.org) - A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+- [Husky](https://www.npmjs.com/package/husky) - Git hooks that allows custom scripts to be ran against your repository.
+- [Lint-staged](https://github.com/okonet/lint-staged) - Helping [Husky](https://www.npmjs.com/package/husky) to run linters against staged git files
 
 ## Getting Started
 
@@ -20,7 +23,7 @@ $ npm install
 ### 2. Enable husky
 
 ```bash
-npm run prepare
+$ npm run prepare
 ```
 
 **_NOTE:_** Ensure that you have got a Git repository, otherwise run this command: `git init`
@@ -28,7 +31,7 @@ npm run prepare
 ### 3. Development
 
 ```bash
-npm run dev
+$ npm run dev
 ```
 
 ## Configs
