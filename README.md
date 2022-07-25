@@ -4,8 +4,8 @@ This is a stater template for NextJS and Typescript.
 
 ### Tech Stack
 
-- [NextJS]("https://nextjs.org") - A React framework that enables you to build superfast and extremely user-friendly static websites.
-- [Typescript]("https://www.typescriptlang.org") - A strongly typed programming language that builds on JavaScript.
+- [NextJS](https://nextjs.org) - A React framework that enables you to build superfast and extremely user-friendly static websites.
+- [Typescript](https://www.typescriptlang.org) - A strongly typed programming language that builds on JavaScript.
 - [ESlint](https://eslint.org) - A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 - [Husky](https://www.npmjs.com/package/husky) - Git hooks that allows custom scripts to be ran against your repository.
 - [Lint-staged](https://github.com/okonet/lint-staged) - Helping [Husky](https://www.npmjs.com/package/husky) to run linters against staged git files
