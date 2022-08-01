@@ -93,6 +93,7 @@ More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
 
 **`lint-staged.config.js`**
 <br>
+
 Using `npx tsc` for Typescript checking and `npx eslint` for Eslint checking
 
 ```js
@@ -106,7 +107,6 @@ module.exports = {
 <br>
 
 More configs: [Configuration](https://commitlint.js.org/#/reference-configuration?id=configuration)
-
 More rules: [Rules](https://commitlint.js.org/#/reference-rules?id=rules)
 
 ```js
