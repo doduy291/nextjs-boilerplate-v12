@@ -93,6 +93,7 @@ More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
 
 **`lint-staged.config.js`**
 <br>
+Using `npx tsc` for Typescript checking and `npx eslint` for Eslint checking
 
 ```js
 module.exports = {
@@ -105,6 +106,7 @@ module.exports = {
 <br>
 
 More configs: [Configuration](https://commitlint.js.org/#/reference-configuration?id=configuration)
+
 More rules: [Rules](https://commitlint.js.org/#/reference-rules?id=rules)
 
 ```js
@@ -133,3 +135,16 @@ module.exports = {
   },
 };
 ```
+
+### Type-enum Description
+
+- **build:** Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- **chore:** Other changes that do not modify src or test files
+- **docs:** Documentation only changes
+- **feat:** A new feature
+- **fix:** A bug fix
+- **perf:** A code change that improves performance
+- **refactor:** A code change that neither fixes a bug nor adds a feature
+- **revert:** Reverts a previous commit
+- **style:** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- **test:** Adding missing tests or correcting existing tests
