@@ -37,7 +37,8 @@ $ npm run dev
 
 ## Configs
 
-**`.eslintrc.json`**
+### **`.eslintrc.json`**
+
 <br>
 
 More rules: [@typescript-eslint](https://typescript-eslint.io/rules/) and [@next](https://nextjs.org/docs/basic-features/eslint#eslint-plugin)
@@ -61,7 +62,8 @@ More rules: [@typescript-eslint](https://typescript-eslint.io/rules/) and [@next
 }
 ```
 
-**`tsconfig.json`**
+### **`tsconfig.json`**
+
 <br>
 
 More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
@@ -91,7 +93,8 @@ More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
 }
 ```
 
-**`lint-staged.config.js`**
+### **`lint-staged.config.js`**
+
 <br>
 
 Using `npx tsc` for Typescript checking and `npx eslint` for Eslint checking
@@ -103,7 +106,8 @@ module.exports = {
 };
 ```
 
-**`commitlint.config.js`**
+### **`commitlint.config.js`**
+
 <br>
 
 More configs: [Configuration](https://commitlint.js.org/#/reference-configuration?id=configuration)
