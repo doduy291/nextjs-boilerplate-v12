@@ -13,7 +13,7 @@ This is a stater template for NextJS and Typescript.
 
 ## Getting Started
 
-### 1. Clone the repository and install dependencies
+**1. Clone the repository and install dependencies**
 
 ```bash
 $ git clone https://github.com/doduy291/next-js-setup.git <YOUR_FOLDER_NAME>
@@ -21,25 +21,52 @@ $ cd <YOUR_FOLDER_NAME>
 $ npm install
 ```
 
-### 2. Enable husky
+**2. Enable husky**
 
 ```bash
 $ npm run prepare
 ```
 
-**_NOTE:_** Ensure that you have got a Git repository, otherwise run this command: `git init`
+> ⚠️ Ensure that you have got a Git repository, otherwise run this command: `git init`
 
-### 3. Development
+**3. Development**
 
 ```bash
 $ npm run dev
 ```
 
+### Commitlint Usage
+
+In general the pattern mostly looks like this:
+
+```bash
+type(scope?): subject  #scope is optional; multiple scopes are supported (current delimiter options: "/", "\" and ",")
+```
+
+Real world examples can look like this:
+
+```bash
+$ git commit -m "build: add new file type"
+or
+$ git commit -m "fix(server): send cors headers
+```
+
+**Type using**
+
+- **build:** Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- **chore:** Other changes that do not modify src or test files
+- **docs:** Documentation only changes
+- **feat:** A new feature
+- **fix:** A bug fix
+- **perf:** A code change that improves performance
+- **refactor:** A code change that neither fixes a bug nor adds a feature
+- **revert:** Reverts a previous commit
+- **style:** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- **test:** Adding missing tests or correcting existing tests
+
 ## Configs
 
-### **`.eslintrc.json`**
-
-<br>
+#### **`.eslintrc.json`**
 
 More rules: [@typescript-eslint](https://typescript-eslint.io/rules/) and [@next](https://nextjs.org/docs/basic-features/eslint#eslint-plugin)
 
@@ -62,11 +89,9 @@ More rules: [@typescript-eslint](https://typescript-eslint.io/rules/) and [@next
 }
 ```
 
-### **`tsconfig.json`**
+#### **`tsconfig.json`**
 
-<br>
-
-More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
+See more TSConfig references: [docs](https://www.typescriptlang.org/tsconfig)
 
 ```js
 {
@@ -93,9 +118,7 @@ More options: [Compiler Options](https://www.typescriptlang.org/tsconfig)
 }
 ```
 
-### **`lint-staged.config.js`**
-
-<br>
+#### **`lint-staged.config.js`**
 
 Using `npx tsc` for Typescript checking and `npx eslint` for Eslint checking
 
@@ -106,12 +129,9 @@ module.exports = {
 };
 ```
 
-### **`commitlint.config.js`**
+#### **`commitlint.config.js`**
 
-<br>
-
-More configs: [Configuration](https://commitlint.js.org/#/reference-configuration?id=configuration)
-More rules: [Rules](https://commitlint.js.org/#/reference-rules?id=rules)
+Read configuration docs: [Configuration](https://commitlint.js.org/#/reference-configuration?id=configuration) and [Rules](https://commitlint.js.org/#/reference-rules?id=rules)
 
 ```js
 module.exports = {
@@ -139,16 +159,3 @@ module.exports = {
   },
 };
 ```
-
-### Type-enum Description
-
-- **build:** Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-- **chore:** Other changes that do not modify src or test files
-- **docs:** Documentation only changes
-- **feat:** A new feature
-- **fix:** A bug fix
-- **perf:** A code change that improves performance
-- **refactor:** A code change that neither fixes a bug nor adds a feature
-- **revert:** Reverts a previous commit
-- **style:** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-- **test:** Adding missing tests or correcting existing tests
