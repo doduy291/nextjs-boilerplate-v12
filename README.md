@@ -159,3 +159,7 @@ module.exports = {
   },
 };
 ```
+
+## Additional Documents
+
+- [Tailwind CSS Setup Guides](https://github.com/doduy291/next-js-setup/blob/master/docs/guide-tailwind-css-setup.md)
