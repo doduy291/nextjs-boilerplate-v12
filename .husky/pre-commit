@@ -7,6 +7,6 @@ NC='\e[0m'
 
 echo -e "${BGreen}***** Running pre-commit (${BCyan}Typescript, Eslint${BGreen}) checks... *****${NC}"
 
-npx lint-staged --quiet
+npx lint-staged --quiet --concurrent false
 
 echo -e "${BGreen}=======> DONE ✅ ${NC}"
