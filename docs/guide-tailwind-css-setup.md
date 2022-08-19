@@ -27,7 +27,7 @@ module.exports = {
 }
 ```
 
-**3. Add the Tailwind directives to `./styles/globals.css` file**
+**3. Add the Tailwind directives to `./styles/globals.css` or `./styles/globals.scss` file**
 
 ```bash
 @tailwind base;
