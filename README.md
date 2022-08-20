@@ -37,7 +37,9 @@ $ npm run prepare
 $ npm run dev
 ```
 
-### Commitlint Usage
+## Usage Guides
+
+### Commitlint
 
 In general the pattern mostly looks like this:
 
