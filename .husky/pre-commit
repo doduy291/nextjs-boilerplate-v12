@@ -5,8 +5,8 @@ BCyan='\033[1;36m'
 BGreen='\033[1;32m'   
 NC='\e[0m'
 
-echo -e "${BGreen}***** Running pre-commit (${BCyan}Typescript, Eslint${BGreen}) checks... *****${NC}"
+echo -e "${BGreen}***** Running pre-commit (${BCyan}Typescript, Eslint, Stylelint${BGreen}) checks... *****${NC}"
 
 npx lint-staged --quiet --concurrent false
 
-echo -e "${BGreen}=======> DONE ✅ ${NC}"
+echo -e "${BGreen}>>> DONE ✅ <<<${NC}"
