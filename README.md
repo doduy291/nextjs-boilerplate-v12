@@ -6,10 +6,12 @@ This is a stater template for NextJS and Typescript.
 
 - [NextJS](https://nextjs.org) - A React framework that enables you to build superfast and extremely user-friendly static websites.
 - [Typescript](https://www.typescriptlang.org) - A strongly typed programming language that builds on JavaScript.
+- [Sass](https://sass-lang.com) - A preprocessor scripting language that is interpreted or compiled into CSS.
 - [ESlint](https://eslint.org) - A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 - [Husky](https://www.npmjs.com/package/husky) - Git hooks that allows custom scripts to be ran against your repository.
 - [Lint-staged](https://github.com/okonet/lint-staged) - Helping [Husky](https://www.npmjs.com/package/husky) to run linters against staged git files. (require [Husky](https://www.npmjs.com/package/husky))
 - [Commitlint](https://commitlint.js.org/#/) - A tool that lints your commit messages and makes sure they follow a set of rules. (require [Husky](https://www.npmjs.com/package/husky))
+- [Stylelint](https://stylelint.io) - A linter that avoids errors and enforces conventions in CSS.
 
 ## Getting Started
 
@@ -126,18 +128,23 @@ See more TSConfig references: [docs](https://www.typescriptlang.org/tsconfig)
 
 #### **`lint-staged.config.js`**
 
-Using `npx tsc` for Typescript checking and `npx eslint` for Eslint checking
+Using Typescript, Eslint and Stylelint checks
 
 ```js
 module.exports = {
   "**/*.(ts|tsx)": () => "npx tsc --noEmit --pretty",
-  "**/*.(ts|tsx|js|jsx)": (filenames) => `npx eslint ${filenames.join(" ")}`,
+  "./src/**/*.(ts|tsx|js|jsx)": (filenames) =>
+    `npx eslint ${filenames.join(" ")}`,
+  "./src/**/*.(css|scss|sass|styles.(js|ts))": (filenames) =>
+    `npx stylelint ${filenames.join(" ")}`,
 };
 ```
 
+> ⚠️ With CSS-in-JS, you should give a filename following this pattern `*.styles.(js|ts)`
+
 #### **`commitlint.config.js`**
 
-Read configuration docs: [Configuration](https://commitlint.js.org/#/reference-configuration?id=configuration) and [Rules](https://commitlint.js.org/#/reference-rules?id=rules)
+Read docs: [Configurations](https://commitlint.js.org/#/reference-configuration?id=configuration) and [Rules](https://commitlint.js.org/#/reference-rules?id=rules)
 
 ```js
 module.exports = {
@@ -166,6 +173,26 @@ module.exports = {
 };
 ```
 
+#### **`.stylelintrc.json`**
+
+Read docs: [Configurations](https://stylelint.io/user-guide/configure), [Original rules](https://commitlint.js.org/#/reference-rules?id=rules) and [SCSS rules](https://github.com/stylelint-scss/stylelint-config-standard-scss/blob/main/index.js)
+
+```js
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "value-no-vendor-prefix": true,
+    "declaration-colon-newline-after": null,
+    "value-list-comma-newline-after": null,
+    "font-family-name-quotes": null,
+    "shorthand-property-no-redundant-values": null,
+    "no-missing-end-of-source-newline": null
+  }
+}
+
+```
+
 ## Additional Documents
 
 - [Tailwind CSS Setup Guides](https://github.com/doduy291/next-js-setup/blob/master/docs/guide-tailwind-css-setup.md)
+- [SASS Setup Guides](https://github.com/doduy291/next-js-setup/blob/master/docs/guide-sass-setup.md)
