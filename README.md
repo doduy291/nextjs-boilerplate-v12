@@ -9,8 +9,8 @@ This is a stater template for NextJS and Typescript.
 - [Sass](https://sass-lang.com) - A preprocessor scripting language that is interpreted or compiled into CSS.
 - [ESlint](https://eslint.org) - A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 - [Husky](https://www.npmjs.com/package/husky) - Git hooks that allows custom scripts to be ran against your repository.
-- [Lint-staged](https://github.com/okonet/lint-staged) - Helping [Husky](https://www.npmjs.com/package/husky) to run linters against staged git files. (require [Husky](https://www.npmjs.com/package/husky))
-- [Commitlint](https://commitlint.js.org/#/) - A tool that lints your commit messages and makes sure they follow a set of rules. (require [Husky](https://www.npmjs.com/package/husky))
+- [Lint-staged](https://github.com/okonet/lint-staged) - Helping [Husky](https://www.npmjs.com/package/husky) to run linters against staged git files.
+- [Commitlint](https://commitlint.js.org/#/) - A tool that lints your commit messages and makes sure they follow a set of rules.
 - [Stylelint](https://stylelint.io) - A linter that avoids errors and enforces conventions in CSS.
 
 ## Getting Started
@@ -38,6 +38,10 @@ $ npm run dev
 ```
 
 ## Usage Guides
+
+### ESlint
+
+You should install [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension in VSCode to improve error dectections
 
 ### Commitlint
 
@@ -68,11 +72,15 @@ $ git commit -m "fix(server): send cors headers
 - **style:** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - **test:** Adding missing tests or correcting existing tests
 
+### Stylelint
+
+I recommend installing [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) extension in VSCode to show directly underlines for errors rather than typing `npx stylelint <path>` to check error
+
 ## Configs
 
 #### **`.eslintrc.json`**
 
-More rules: [@typescript-eslint](https://typescript-eslint.io/rules/) and [@next](https://nextjs.org/docs/basic-features/eslint#eslint-plugin)
+More rules: [@typescript-eslint](https://typescript-eslint.io/rules/), [@next](https://nextjs.org/docs/basic-features/eslint#eslint-plugin), [React](https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules), [React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks#eslint-plugin-react-hooks) and [Import](https://www.npmjs.com/package/eslint-plugin-import)
 
 ```js
 {
@@ -142,7 +150,7 @@ module.exports = {
 };
 ```
 
-> ⚠️ With CSS-in-JS, you should give a filename following this pattern `*.styles.(js|ts)`
+> ⚠️ With CSS-in-JS, you should give a filename following this pattern `<FILENAME>.styles.<js|ts>`
 
 #### **`commitlint.config.js`**
 
@@ -182,13 +190,17 @@ Read docs: [Configurations](https://stylelint.io/user-guide/configure), [Origina
 ```js
 {
   "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
   "rules": {
     "value-no-vendor-prefix": true,
     "declaration-colon-newline-after": null,
     "value-list-comma-newline-after": null,
     "font-family-name-quotes": null,
     "shorthand-property-no-redundant-values": null,
-    "no-missing-end-of-source-newline": null
+    "no-missing-end-of-source-newline": null,
+    "declaration-empty-line-before": null,
+    "indentation": null,
+    "order/properties-order": [propertyOrder], // variable "propertyOrder in ".stylelintrc.js"
   }
 }
 
