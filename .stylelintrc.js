@@ -351,7 +351,6 @@ const propertyGroups = [
 ];
 const propertyOrder = propertyGroups.map((properties) => ({
   noEmptyLineBetween: true,
-  emptyLineBefore: "always",
   properties,
 }));
 
@@ -367,6 +366,7 @@ module.exports = {
     "no-missing-end-of-source-newline": null,
     "declaration-empty-line-before": null,
     indentation: null,
+    "selector-list-comma-newline-after": "always-multi-line",
     "order/properties-order": [propertyOrder],
   },
 };
