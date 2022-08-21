@@ -36,7 +36,3 @@ yarn-error.log*
 
 # swc
 /.swc/
-
-# lock install
-yarn.lock
-package-lock.json
