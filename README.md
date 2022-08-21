@@ -76,6 +76,23 @@ $ git commit -m "fix(server): send cors headers
 
 I recommend installing [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) extension in VSCode to show directly underlines for errors rather than typing `npx stylelint <path>` to check error
 
+#### Autofix Stylelint errors on save with **`settings.json`** in VSCode
+
+This is my configs ([Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) requirement)
+I don't know why someone has to disable `formatOnSave` though it seems to work with `codeActionOnSave`, I need to format some files like `.ts`,`.js`,... in Prettier extension, so still keep my `formatOnSave` is `true`
+
+```bash
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "stylelint.validate": ["css", "scss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "files.autoSaveDelay": 500
+}
+```
+
 ## Configs
 
 #### **`.eslintrc.json`**
@@ -183,7 +200,7 @@ module.exports = {
 };
 ```
 
-#### **`.stylelintrc.json`**
+#### **`.stylelintrc.js`**
 
 Read docs: [Configurations](https://stylelint.io/user-guide/configure), [Original rules](https://commitlint.js.org/#/reference-rules?id=rules) and [SCSS rules](https://github.com/stylelint-scss/stylelint-config-standard-scss/blob/main/index.js)
 
@@ -200,6 +217,7 @@ Read docs: [Configurations](https://stylelint.io/user-guide/configure), [Origina
     "no-missing-end-of-source-newline": null,
     "declaration-empty-line-before": null,
     "indentation": null,
+    "selector-list-comma-newline-after": "always-multi-line",
     "order/properties-order": [propertyOrder], // variable "propertyOrder in ".stylelintrc.js"
   }
 }
