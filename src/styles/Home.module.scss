@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   min-height: 100vh;
   padding: 4rem 0;
 }
@@ -18,9 +17,7 @@
   flex: 1;
   align-items: center;
   justify-content: center;
-
   padding: 2rem 0;
-
   border-top: 1px solid #eaeaea;
 }
 
@@ -44,7 +41,6 @@
 
 .title {
   margin: 0;
-
   font-size: 4rem;
   line-height: 1.15;
 }
@@ -56,18 +52,15 @@
 
 .description {
   margin: 4rem 0;
-
   font-size: 1.5rem;
   line-height: 1.5;
 }
 
 .code {
   padding: 0.75rem;
-
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
   font-size: 1.1rem;
-
   background: #fafafa;
   border-radius: 5px;
 }
@@ -77,42 +70,60 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
   max-width: 800px;
 }
+
+// .card {
+//   max-width: 300px;
+//   margin: 1rem;
+//   padding: 1.5rem;
+
+//   color: inherit;
+//   text-align: left;
+//   text-decoration: none;
+
+//   border: 1px solid #eaeaea;
+//   border-color: 0.15s ease;
+//   border-radius: 10px;
+
+//   transition: color 0.15s ease;
+// }
+
+// .card:hover,
+// .card:focus,
+// .card:active {
+//   color: #0070f3;
+
+//   border-color: #0070f3;
+// }
 
 .card {
   max-width: 300px;
   margin: 1rem;
   padding: 1.5rem;
-
   color: inherit;
   text-align: left;
   text-decoration: none;
-
   border: 1px solid #eaeaea;
+  border-color: 0.15s ease;
   border-radius: 10px;
+  transition: color 0.15s ease;
 
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-
-  border-color: #0070f3;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
-
   font-size: 1.5rem;
 }
 
 .card p {
   margin: 0;
-
   font-size: 1.25rem;
   line-height: 1.5;
 }
@@ -125,7 +136,6 @@
 @media (max-width: 600px) {
   .grid {
     flex-direction: column;
-
     width: 100%;
   }
 }
