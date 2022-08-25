@@ -79,7 +79,7 @@ I recommend installing [Stylelint](https://marketplace.visualstudio.com/items?it
 #### Autofix Stylelint errors on save with **`settings.json`** in VSCode
 
 This is my configs ([Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) requirement)
-I don't know why someone has to disable `formatOnSave` though it seems to work with `codeActionOnSave`, I need to format some files like `.ts`,`.js`,... in Prettier extension, so still keep my `formatOnSave` is `true`
+I don't know why others have to disable `formatOnSave` though it seems to work with `codeActionOnSave`, I need to format some files like `.ts`,`.js`,... in Prettier extension, so still keep my `formatOnSave` is `true`
 
 ```bash
 {
