@@ -29,7 +29,8 @@ $ npm install
 $ npm run prepare
 ```
 
-> ⚠️ Ensure that you have got a Git repository, otherwise run this command: `git init`
+> ⚠️ Ensure that you have got a Git repository, otherwise run this command: `git init`.
+> You can pass over this command if you installed packages before.
 
 **3. Development**
 
