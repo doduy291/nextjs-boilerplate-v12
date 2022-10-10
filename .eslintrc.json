@@ -12,6 +12,7 @@
   "plugins": [], // Only use "plugins" with customize rules
   "rules": {
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     "react-hooks/exhaustive-deps": "error",
     "@typescript-eslint/ban-types": "error",
     "@typescript-eslint/no-unused-vars": "error",
