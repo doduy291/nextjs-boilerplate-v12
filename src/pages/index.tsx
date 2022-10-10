@@ -42,6 +42,36 @@ const Home: NextPage = () => {
         </div>
       </main>
 
+      <p className={styles.description}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+        recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
+        facere aut amet. Vero perferendis neque quisquam itaque, harum accusamus
+        veniam earum saepe?
+      </p>
+      <p className={styles.description}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+        recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
+        facere aut amet. Vero perferendis neque quisquam itaque, harum accusamus
+        veniam earum saepe?
+      </p>
+      <p className={styles.description}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+        recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
+        facere aut amet. Vero perferendis neque quisquam itaque, harum accusamus
+        veniam earum saepe?
+      </p>
+      <p className={styles.description}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+        recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
+        facere aut amet. Vero perferendis neque quisquam itaque, harum accusamus
+        veniam earum saepe?
+      </p>
+      <p className={styles.description}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+        recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
+        facere aut amet. Vero perferendis neque quisquam itaque, harum accusamus
+        veniam earum saepe?
+      </p>
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
