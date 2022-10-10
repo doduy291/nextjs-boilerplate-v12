@@ -87,8 +87,15 @@ I don't know why others have to disable `formatOnSave` though it seems to work w
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "stylelint.validate": ["css", "scss"],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true
+  "[css]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
   },
   "files.autoSaveDelay": 500
 }
@@ -115,6 +122,7 @@ More rules: [@typescript-eslint](https://typescript-eslint.io/rules/), [@next](h
   "plugins": [], // Only use "plugins" with customize rules
   "rules": {
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     "react-hooks/exhaustive-deps": "error",
     "@typescript-eslint/ban-types": "error",
     "@typescript-eslint/no-unused-vars": "error",
