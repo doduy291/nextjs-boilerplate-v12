@@ -13,6 +13,11 @@ This is a stater template for NextJS and Typescript.
 - [Commitlint](https://commitlint.js.org/#/) - A tool that lints your commit messages and makes sure they follow a set of rules.
 - [Stylelint](https://stylelint.io) - A linter that avoids errors and enforces conventions in CSS.
 
+#### Version
+
+- NextJS (`v12.2.0`)
+- ReactJS (`v18.2.0`)
+
 ## Getting Started
 
 **1. Clone the repository and install dependencies**
@@ -23,7 +28,7 @@ $ cd <YOUR_FOLDER_NAME>
 $ npm install
 ```
 
-**2. Enable husky**
+**2. Enable husky** (Optional)
 
 ```bash
 $ npm run prepare
@@ -164,7 +169,7 @@ See more TSConfig references: [docs](https://www.typescriptlang.org/tsconfig)
 
 #### **`lint-staged.config.js`**
 
-Using Typescript, Eslint and Stylelint checks
+Using Eslint and Stylelint checks
 
 ```js
 module.exports = {
