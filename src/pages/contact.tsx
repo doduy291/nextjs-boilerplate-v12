@@ -1,16 +1,16 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Header from "../components/Header";
+import Meta from "../components/Meta";
 import styles from "../styles/Home.module.scss";
 
 const Contact: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Contact</title>
-        <meta name="description" content="Contact Page" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta
+        title="Contact"
+        description="Contact Page"
+        canonical="http://localhost:3000/contact"
+      />
 
       <Header />
 

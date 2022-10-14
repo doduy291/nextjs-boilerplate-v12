@@ -1,16 +1,16 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Header from "../components/Header";
+import Meta from "../components/Meta";
 import styles from "../styles/Home.module.scss";
 
 const About: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>About page</title>
-        <meta name="description" content="About content" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta
+        title="About"
+        description="About Page"
+        canonical="http://localhost:3000/about"
+      />
 
       <Header />
 
