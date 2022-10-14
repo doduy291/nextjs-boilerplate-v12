@@ -12,6 +12,7 @@ This is a stater template for NextJS and Typescript.
 - [Lint-staged](https://github.com/okonet/lint-staged) - Helping [Husky](https://www.npmjs.com/package/husky) to run linters against staged git files.
 - [Commitlint](https://commitlint.js.org/#/) - A tool that lints your commit messages and makes sure they follow a set of rules.
 - [Stylelint](https://stylelint.io) - A linter that avoids errors and enforces conventions in CSS.
+- [Next SEO](https://www.npmjs.com/package/next-seo) - A plugin that makes managing your SEO easier in Next.js projects.
 
 #### Version
 
