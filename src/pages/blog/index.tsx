@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import Header from "../../components/Header";
+import Layout from "../../components/Layout";
 import styles from "../../styles/Home.module.scss";
 
 interface Blog {
@@ -18,17 +18,18 @@ interface Props {
 
 const BlogList: NextPage<Props> = ({ blogs }) => {
   return (
-    <div className={styles.container}>
-      <Header />
-      <h1>Blog: </h1>
-      <ul>
-        {blogs.map((blog) => (
-          <li key={blog.id}>
-            <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Layout>
+      <div className={styles.container}>
+        <h1>Blog: </h1>
+        <ul>
+          {blogs.map((blog) => (
+            <li key={blog.id}>
+              <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Layout>
   );
 };
 
