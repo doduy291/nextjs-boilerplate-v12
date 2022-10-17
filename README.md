@@ -83,10 +83,11 @@ $ git commit -m "fix(server): send cors headers
 
 I recommend installing [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) extension in VSCode to show directly underlines for errors rather than typing `npx stylelint <path>` to check error
 
+> This setup only supports the following files: `CSS`, `SCSS`, `SASS`.
+
 #### Autofix Stylelint errors on save with **`settings.json`** in VSCode
 
 This is my configs ([Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) requirement)
-I don't know why others have to disable `formatOnSave` though it seems to work with `codeActionOnSave`, I need to format some files like `.ts`,`.js`,... in Prettier extension, so still keep my `formatOnSave` is `true`
 
 ```bash
 {
@@ -136,7 +137,6 @@ More rules: [@typescript-eslint](https://typescript-eslint.io/rules/), [@next](h
     "@next/next/no-img-element": "off"
   }
 }
-
 ```
 
 #### **`tsconfig.json`**
@@ -176,12 +176,10 @@ Using Eslint and Stylelint checks
 module.exports = {
   "./src/**/*.(ts|tsx|js|jsx)": (filenames) =>
     `npx eslint ${filenames.join(" ")}`,
-  "./src/**/*.(css|scss|sass|styles.(js|ts))": (filenames) =>
+  "./src/**/*.(css|scss|sass)": (filenames) =>
     `npx stylelint ${filenames.join(" ")}`,
 };
 ```
-
-> ⚠️ With CSS-in-JS, you should give a filename following this pattern `<FILENAME>.styles.<js|ts>`
 
 #### **`commitlint.config.js`**
 
