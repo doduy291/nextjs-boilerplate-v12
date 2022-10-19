@@ -1,107 +1,21 @@
+import { NextPage, GetStaticPropsContext } from "next";
 import Layout from "../../components/Layout";
-import styles from "../../styles/Home.module.scss";
-import { GetStaticPropsContext, NextPage } from "next";
-
-interface Blog {
-  id: number | string;
-  title: string;
-  description: string;
-  slug: string;
-}
-
-interface Blogs extends Array<Blog> {}
+import BlogDetail from "../../templates/Blog/BlogDetail";
+import type { Blog, Blogs } from "../../types";
 
 interface Props {
   blog: Blog;
 }
 
-const BlogPage: NextPage<Props> = ({ blog }) => {
+const BlogDetailPage: NextPage<Props> = ({ blog }) => {
   return (
     <Layout>
-      <div className={styles.container}>
-        <h1>Blog - {blog.id} </h1>
-        <h2>Title: {blog.title} </h2>
-        <h2>Description: {blog.description} </h2>
-        <h2>Slug: {blog.slug} </h2>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          quibusdam architecto optio recusandae culpa, blanditiis ullam iste
-          facere unde! Facere rem aperiam praesentium incidunt pariatur quos
-          labore ab unde molestiae.
-        </p>
-      </div>
+      <BlogDetail blog={blog} />
     </Layout>
   );
 };
 
-export default BlogPage;
+export default BlogDetailPage;
 
 export async function getStaticPaths() {
   const res = await fetch("https://63444e7d242c1f347f839ee0.mockapi.io/blogs");
