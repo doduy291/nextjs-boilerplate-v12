@@ -1,10 +1,8 @@
 import type { NextPage } from "next";
-import Image from "next/image";
-import Link from "next/link";
 import Meta from "../components/Meta";
-import styles from "../styles/Home.module.scss";
+import Home from "../templates/Home";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <>
       <Meta
@@ -13,86 +11,9 @@ const Home: NextPage = () => {
         canonical="http://localhost:3000"
       />
 
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
-
-          <p className={styles.description}>
-            Get started by editing{" "}
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-
-          <div className={styles.grid}>
-            <Link href="/">
-              <h2 className={styles.link}>Home Page</h2>
-            </Link>
-
-            <Link href="/about">
-              <h2 className={styles.link}>About Page</h2>
-            </Link>
-
-            <Link href="/contact">
-              <h2 className={styles.link}>Contact Page</h2>
-            </Link>
-
-            <Link href="/blog">
-              <h2 className={styles.link}>Blog Page</h2>
-            </Link>
-          </div>
-        </main>
-
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-          recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
-          facere aut amet. Vero perferendis neque quisquam itaque, harum
-          accusamus veniam earum saepe?
-        </p>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-          recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
-          facere aut amet. Vero perferendis neque quisquam itaque, harum
-          accusamus veniam earum saepe?
-        </p>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-          recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
-          facere aut amet. Vero perferendis neque quisquam itaque, harum
-          accusamus veniam earum saepe?
-        </p>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-          recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
-          facere aut amet. Vero perferendis neque quisquam itaque, harum
-          accusamus veniam earum saepe?
-        </p>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-          recusandae nihil aspernatur quas quasi dolorum voluptatibus. Sapiente
-          facere aut amet. Vero perferendis neque quisquam itaque, harum
-          accusamus veniam earum saepe?
-        </p>
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <span className={styles.logo}>
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
-            </span>
-          </a>
-        </footer>
-      </div>
+      <Home />
     </>
   );
 };
 
-export default Home;
+export default HomePage;

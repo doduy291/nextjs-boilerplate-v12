@@ -1,39 +1,21 @@
 import { NextPage } from "next";
-import Link from "next/link";
 import Layout from "../../components/Layout";
-import styles from "../../styles/Home.module.scss";
-
-interface Blog {
-  id: number | string;
-  title: string;
-  description: string;
-  slug: string;
-}
-
-interface Blogs extends Array<Blog> {}
+import Blog from "../../templates/Blog";
+import type { Blogs } from "../../types";
 
 interface Props {
   blogs: Blogs;
 }
 
-const BlogList: NextPage<Props> = ({ blogs }) => {
+const BlogPage: NextPage<Props> = ({ blogs }) => {
   return (
     <Layout>
-      <div className={styles.container}>
-        <h1>Blog: </h1>
-        <ul>
-          {blogs.map((blog) => (
-            <li key={blog.id}>
-              <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <Blog blogs={blogs} />
     </Layout>
   );
 };
 
-export default BlogList;
+export default BlogPage;
 
 /***  getServerSideProps way ***/
 // export async function getServerSideProps() {
