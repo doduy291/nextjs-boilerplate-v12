@@ -48,7 +48,7 @@ $ npm run dev
 
 ### ESlint
 
-You should install [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension in VSCode to improve error dectections
+You should install [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension in VSCode to dectect errors.
 
 ### Commitlint
 
@@ -108,7 +108,26 @@ This is my configs ([Prettier](https://marketplace.visualstudio.com/items?itemNa
 }
 ```
 
+#### SASS: Variable and Media Query Breakpoints with mixin
+
+I just give documents to understand usage <br />
+[Variable](https://sass-lang.com/documentation/variables) <br />
+[Mixin](https://sass-lang.com/documentation/at-rules/mixin)
+
 ## Configs
+
+#### **`.next.config.js`**
+
+```bash
+const nextConfig = {
+  reactStrictMode: true,
+  sassOptions: {
+    additionalData: `@import "src/styles/_variables.scss"; @import "src/styles/_mixins.scss";`,
+  },
+};
+```
+
+> We need to declare these imports in sassOptions to use variable and mixin features in SASS
 
 #### **`.eslintrc.json`**
 
@@ -228,6 +247,7 @@ Read docs: [Configurations](https://stylelint.io/user-guide/configure), [Origina
     "shorthand-property-no-redundant-values": null,
     "no-missing-end-of-source-newline": null,
     "declaration-empty-line-before": null,
+    "selector-class-pattern": null,
     "indentation": null,
     "selector-list-comma-newline-after": "always-multi-line",
     "order/properties-order": [propertyOrder], // variable "propertyOrder in ".stylelintrc.js"
