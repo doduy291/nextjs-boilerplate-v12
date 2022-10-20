@@ -358,6 +358,7 @@ module.exports = {
   extends: ["stylelint-config-standard-scss"],
   plugins: ["stylelint-order"],
   rules: {
+    /* CSS rule*/
     "value-no-vendor-prefix": true,
     "declaration-colon-newline-after": null,
     "value-list-comma-newline-after": null,
@@ -369,6 +370,11 @@ module.exports = {
     "selector-class-pattern": null,
     indentation: null,
     "selector-list-comma-newline-after": "always-multi-line",
+
+    /* SCSS rule */
+    "scss/at-import-no-partial-leading-underscore": null,
+
+    /* Order styles */
     "order/properties-order": [propertyOrder],
   },
 };
