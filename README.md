@@ -108,7 +108,7 @@ This is my configs ([Prettier](https://marketplace.visualstudio.com/items?itemNa
 }
 ```
 
-#### SASS: Variable and Media Query Breakpoints with mixin
+### SASS: Variable and Media Query Breakpoints with mixin
 
 I just give documents to understand usage <br />
 [Variable](https://sass-lang.com/documentation/variables) <br />
