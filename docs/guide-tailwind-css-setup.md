@@ -35,16 +35,4 @@ module.exports = {
 @tailwind utilities;
 ```
 
-**4. Config next.config.js** (Optional)
-Config this file if you wanna use SASS feature (like mixin, variable,...) outside the styles folder
-
-```bash
-const nextConfig = {
-  reactStrictMode: true,
-  sassOptions: {
-    additionalData: `@import "src/styles/_variables.scss"; @import "src/styles/_mixins.scss";`,
-  },
-};
-```
-
 > These paths are based on my repository next-js-setup
