@@ -371,9 +371,6 @@ module.exports = {
     indentation: null,
     "selector-list-comma-newline-after": "always-multi-line",
 
-    /* SCSS rule */
-    "scss/at-import-no-partial-leading-underscore": null,
-
     /* Order styles */
     "order/properties-order": [propertyOrder],
   },
