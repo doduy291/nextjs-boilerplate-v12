@@ -110,9 +110,28 @@ This is my configs ([Prettier](https://marketplace.visualstudio.com/items?itemNa
 
 ### SASS: Variable and Media Query Breakpoints with mixin
 
-I just give documents to understand usage <br />
+Read document to understand better <br />
 [Variable](https://sass-lang.com/documentation/variables) <br />
 [Mixin](https://sass-lang.com/documentation/at-rules/mixin)
+
+#### How to use
+
+```bash
+.any-selector {
+  width: 100%;
+
+  @include media($min: $mobile, $max: $desktop) {
+    // Some CSS
+  }
+}
+
+or
+.any-css2 {
+  @include media($min: 40em) {
+    // Some CSS
+  }
+}
+```
 
 ## Configs
 
