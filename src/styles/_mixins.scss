@@ -31,4 +31,6 @@
       $query: $query + "(#{$property-value}: #{$value})";
     }
   }
+
+  @return $query;
 }
