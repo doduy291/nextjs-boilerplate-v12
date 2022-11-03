@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Layout from "../components/Layout";
 import Meta from "../components/Meta";
-import About from "../templates/About";
+import About from "../containers/About";
 
 const AboutPage: NextPage = () => {
   return (

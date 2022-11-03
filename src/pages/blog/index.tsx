@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Layout from "../../components/Layout";
-import Blog from "../../templates/Blog";
+import Blog from "../../containers/Blog";
 import type { Blogs } from "../../types";
 
 interface Props {
