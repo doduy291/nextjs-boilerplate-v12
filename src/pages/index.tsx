@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import Meta from "../components/Meta";
-import Home from "../containers/Home";
+import Meta from "~/components/Meta";
+import Home from "~/containers/Home";
 
 const HomePage: NextPage = () => {
   return (

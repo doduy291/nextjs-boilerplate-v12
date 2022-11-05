@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
-import type { Blogs } from "../../types/Blog";
+import type { Blogs } from "~/types/Blog";
 
 interface Props {
   blogs: Blogs;
