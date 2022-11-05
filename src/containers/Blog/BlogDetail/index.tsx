@@ -1,5 +1,5 @@
 import styles from "../styles.module.scss";
-import type { Blog } from "../../../types";
+import type { Blog } from "~/types/Blog";
 
 interface Props {
   blog: Blog;
