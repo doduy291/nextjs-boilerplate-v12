@@ -1,7 +1,7 @@
 import { NextPage, GetStaticPropsContext } from "next";
 import Layout from "../../components/Layout";
 import BlogDetail from "../../containers/Blog/BlogDetail";
-import type { Blog, Blogs } from "../../types";
+import type { Blog, Blogs } from "../../types/Blog";
 
 interface Props {
   blog: Blog;
