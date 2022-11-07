@@ -16,6 +16,7 @@ This is a stater template for NextJS and Typescript.
 
 #### Version
 
+- NodeJS (`v16.17.0`) (mine)
 - NextJS (`v12.2.0`)
 - ReactJS (`v18.2.0`)
 
