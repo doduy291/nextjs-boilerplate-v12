@@ -17,8 +17,25 @@ This is a stater template for NextJS and Typescript.
 #### Version
 
 - NodeJS (`v16.17.0`) (mine)
-- NextJS (`v12.2.0`)
+- NextJS (`v12.3.0`)
 - ReactJS (`v18.2.0`)
+
+## Folder Structure
+
+```js
+├── ...
+├── src
+│   ├── assets       # Contains things like (image, icon, logo, .stc)
+│   ├── components   # Contains reusable UI components like (Header, Footer, Modal, Button, .etc)
+│   ├── containers   # Contains components which are associated with page component (pages folder)
+│   ├── hooks        # Contains custom hooks
+│   ├── libs         # Contains third-party libraries
+│   ├── pages        # Contains individual page components
+│   ├── styles       # As global styles
+│   ├── types        # (only Typescript) Manages types and interfaces
+│   └── utils        # Contains constants (static data) and utility functions (pure function)
+└── ...
+```
 
 ## Getting Started
 
