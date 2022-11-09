@@ -15,3 +15,11 @@ const nextCn = (styles: Styles, classNames: string) => {
 };
 
 export { nextCn };
+
+// Usage
+/* 
+    import styles from './example.module.css
+    ...
+    ...
+    <div className={nextCn(styles, "class-1 class-2")}></div>
+*/
