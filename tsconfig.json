@@ -16,6 +16,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]
