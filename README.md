@@ -218,10 +218,10 @@ See more TSConfig references: [docs](https://www.typescriptlang.org/tsconfig)
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]
-    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
@@ -291,7 +291,7 @@ Read docs: [Configurations](https://stylelint.io/user-guide/configure), [Origina
     "selector-class-pattern": null,
     "indentation": null,
     "selector-list-comma-newline-after": "always-multi-line",
-    "order/properties-order": [propertyOrder], // variable "propertyOrder in ".stylelintrc.js"
+    "order/properties-order": propertyOrder, // variable "propertyOrder in ".stylelintrc.js"
   }
 }
 
