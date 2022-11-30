@@ -1,4 +1,10 @@
 {
+  /* Enviroment */
+  // https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-environments
+  "env": {
+    "browser": true,
+    "node": true
+  },
   /* Extends */
   // implement the entire plugins
   "extends": [
