@@ -9,4 +9,4 @@ echo -e "${BGreen}***** Running pre-commit (${BCyan}Eslint, Stylelint${BGreen}) 
 
 npx lint-staged --quiet --concurrent false
 
-echo -e "${BGreen}>>> DONE ✅ <<<${NC}"
+echo -e "${BGreen}>>> No Errors ✅ <<<${NC}"
