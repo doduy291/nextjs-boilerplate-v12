@@ -9,4 +9,4 @@ echo -e "${BGreen}***** Running commit-msg (${BCyan}Commitlint${BGreen}) checks.
 
 npx --no -- commitlint --edit --color 
 
-echo -e "${BGreen}>>> DONE ✅ <<<${NC}"
+echo -e "${BGreen}>>> No Errors ✅ <<<${NC}"
